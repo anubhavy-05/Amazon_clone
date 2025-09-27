@@ -1,0 +1,192 @@
+*{
+    margin:0px;
+    font-family: Arial;
+    border: border-box;
+}
+.navbar{
+    height: 70px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-logo{
+    height: 30px;
+    width: 70px;
+    margin-left: -2px;
+}
+.logo{
+    background-image: url("Amazon-Logo.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    display: flex;
+    padding-left:7px ;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+.border{
+    border:2px solid transparent;
+    padding: 5px;
+    border-radius: 3px;
+}
+.border:hover {
+    border: 2px solid white;
+}
+.address.first{
+    color: #cccccc;
+    font-size: 0.8rem;
+    margin-left:25px;
+    }
+.address.second{
+    font-size: 1rem;
+    margin-left: 3px;
+    
+
+}
+.add-icon {
+    display: flex;
+    align-items: center;
+
+}
+/* Styling for the Search Bar */
+.nav-search {
+    display: flex; /* Aligns the dropdown, input, and icon horizontally */
+    justify-content: space-evenly;
+    background-color: pink; /* This color won't be visible, it's just a container */
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+    /* This next part is important to keep the rounded corners */
+    overflow: hidden;
+}
+
+.search-select {
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none; /* Removes the default border */
+    outline: none; /* Removes the outline on click */
+}
+
+.search-input {
+    width: 100%; /* The input field will take up the remaining space */
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.search-icon {
+    width: 45px;
+    display: flex;
+    justify-content: center; /* Centers the magnifying glass horizontally */
+    align-items: center;   /* Centers the magnifying glass vertically */
+    font-size: 1.2rem;
+    background-color: #febd68; /* Amazon's search button color */
+    color: #0f1111;
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+
+/* Adds the orange border when you click inside the search bar,
+we also use hovor on place of focus-within */
+.nav-search:focus-within {
+    border: 2px solid #febd68;
+}
+span {
+    font-size: 0.7rem;
+}
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.nav-cart i{
+    font-size: 35px;
+}
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+/* panel */
+.panel{
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.panel-ops p {
+    display: inline;
+    font-size: 0.85;
+    margin-left: 10px;
+    
+}
+.panel-ops{
+    width: 70%;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.panel-ops:hover{
+    text-decoration: line;
+    
+}
+/* hero section */
+.hero-section{
+    background-image: url("heroimage.jpg");
+    height: 370px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hero-msg{
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 85%;
+    margin-bottom: 20px;
+}
+.hero-msg a{
+    color: #007185;
+}
+/* shop section  */
+.shop-section{
+    display: flex;
+    justify-content:space-evenly;
+    background-color: #e2e6e7;
+}
+
+/* --- CORRECTION APPLIED HERE --- */
+.box{
+    /* border: 2px solid black; */ /* I've commented this out to remove the border */
+    height: 400px;
+    width: 23%; /* Changed to 23% to give space for justify-content to work */
+    background-color: white;
+    padding: 20px 15px 15px; /* Added padding for content inside the box */
+    margin-top: 15px;
+    border: 2px solid black;
+    
+}
+
+.box1_box{
+    background-image: url(hero3.jpg); /* Double-check this path! */
+    height: 300px;
+    /* --- ADD THESE PROPERTIES --- */
+    background-size: cover;   /* This makes the image fit without stretching */
+    background-position: center; /* This centers the image in the container */
+   
+}
+.border-content{
+    margin-top: 15px;
+}
+.border-content p{
+    color: #007185;
+}
